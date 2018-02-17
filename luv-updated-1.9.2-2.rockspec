@@ -1,11 +1,12 @@
-package = "luv"
-version = "1.9.1-1"
+package = "luv-updated"
+version = "1.9.2-2"
 source = {
-  url = 'https://github.com/luvit/luv/releases/download/'..version..'/luv-'..version..'.tar.gz'
+  url="git://github.com/slact/luv",
+  tag="v"..version:match("[^-]+")
 }
 
 description = {
-  summary = "Bare libuv bindings for lua",
+  summary = "Bare libuv bindings for lua, with important updates from master",
   detailed = [[
 libuv bindings for luajit and lua 5.1/5.2/5.3.
 
